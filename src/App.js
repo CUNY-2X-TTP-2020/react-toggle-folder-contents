@@ -1,15 +1,10 @@
-import React from 'react';
-import './App.css';
+import React, { Component } from "react";
+import Folder from "./components/Folder";
+import "./App.css";
 
-function App() 
-{
-    return (
-        <div className="App">
-            <header className="App-header">
-                
-            </header>
-        </div>
-    );
+class App extends Component {
+  render() {
+    return <Folder visible={true} />;
+  }
 }
-
 export default App;
