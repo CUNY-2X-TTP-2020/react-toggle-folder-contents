@@ -31,11 +31,11 @@ export default class Folder extends Component
     render() 
     {
         return (
-            <>
-                <h3>Home</h3>
+            <section className="folder">
+                <h2>Home</h2>
                 <button visible={this.state.visible} onClick={this.changeVisibility}>Toggle</button>
                 {this.showFiles()}
-            </>
+            </section>
         );
     }
 }
