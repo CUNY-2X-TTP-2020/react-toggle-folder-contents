@@ -19,10 +19,10 @@ export default class Folder extends Component
         if (this.state.visible == true) 
         {
             return (
-                <ul>
-                    <li>File 1</li>
-                    <li>File 2</li>
-                    <li>File 3</li>
+                <ul className="dropdown-menu">
+                    <li className="dropdown-item1">File 1</li>
+                    <li className="dropdown-item2">File 2</li>
+                    <li className="dropdown-item3">File 3</li>
                 </ul>
             );
         }
