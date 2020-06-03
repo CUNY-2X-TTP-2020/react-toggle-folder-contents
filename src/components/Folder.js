@@ -6,7 +6,7 @@ class Folder extends Component {
     this.state = { visible: this.props.visible };
   }
 
-  folderToggle = () => {
+  changeVisibility = () => {
     if (this.state.visible == true) {
       this.setState({ visible: false });
     } else {
@@ -14,7 +14,7 @@ class Folder extends Component {
     }
   };
 
-  folderVisible = () => {
+  showFiles = () => {
     if (this.state.visible == true) {
       return (
         <ul>
@@ -30,10 +30,10 @@ class Folder extends Component {
     return (
       <>
         <h1>Home</h1>
-        <button visible={this.state.visible} onClick={this.folderToggle}>
+        <button visible={this.state.visible} onClick={this.changeVisibility}>
           Toggle
         </button>
-        {this.folderVisible()}
+        {this.showFiles()}
       </>
     );
   }
