@@ -20,9 +20,9 @@ export default class Folder extends Component
         {
             return (
                 <ul className="dropdown-menu">
-                    <li className="dropdown-item1">File 1</li>
-                    <li className="dropdown-item2">File 2</li>
-                    <li className="dropdown-item3">File 3</li>
+                    <li className="dropdown-item">File 1</li>
+                    <li className="dropdown-item">File 2</li>
+                    <li className="dropdown-item">File 3</li>
                 </ul>
             );
         }
@@ -32,7 +32,7 @@ export default class Folder extends Component
     {
         return (
             <section className="folder">
-                <h2>Home</h2>
+                <h2 className="folder-title">Home</h2>
                 <button visible={this.state.visible} onClick={this.changeVisibility}>Toggle</button>
                 {this.showFiles()}
             </section>
