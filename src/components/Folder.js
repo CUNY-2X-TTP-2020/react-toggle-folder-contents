@@ -32,7 +32,7 @@ export default class Folder extends Component
     {
         return (
             <section className="folder">
-                <h2 className="folder-title">Home</h2>
+                <h2>Home</h2>
                 <button visible={this.state.visible} onClick={this.changeVisibility}>Toggle</button>
                 {this.showFiles()}
             </section>
