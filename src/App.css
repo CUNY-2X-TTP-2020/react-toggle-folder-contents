@@ -14,3 +14,58 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
+
+button
+{
+    background-color: darkcyan;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: calc(10px + 1vmin);
+    padding: 10px;
+    margin: 20px 10px;
+}
+
+button:hover
+{
+    cursor: pointer;
+    background-color: lightseagreen;
+}
+
+button:active
+{
+    position: relative;
+    top: 2px;
+}
+
+button:active,
+button:focus
+{
+    outline: none;
+}
+
+.folder
+{
+    display: block;
+    background-color: #34495e;
+    padding: 0.5rem 2rem;
+    border-radius: 20px;
+}
+
+.dropdown-menu
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+.dropdown-item
+{
+    transition: background-color 0.4s ease;
+    width: 100%;
+}
+
+.dropdown-item:hover
+{
+    cursor: pointer;
+    background-color: #2980b9;
+}
