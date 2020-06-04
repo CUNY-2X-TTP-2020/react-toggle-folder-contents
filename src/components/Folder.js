@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-export default class Folder extends Component 
+export default class Folder extends Component
 {
     constructor(props) 
     {
@@ -10,13 +10,13 @@ export default class Folder extends Component
 
     changeVisibility = () => 
     {
-        if (this.state.visible == true) this.setState({ visible: false });
+        if (this.state.visible === true) this.setState({ visible: false });
         else this.setState({ visible: true });
     };
 
     showFiles = () => 
     {
-        if (this.state.visible == true) 
+        if (this.state.visible === true) 
         {
             return (
                 <ul className="dropdown-menu">
